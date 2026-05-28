@@ -6,6 +6,9 @@
     "ReplicatedStorage": {
       "Shared": {
         "$path": "src/shared"
+      },
+      "RunConfig": {
+        "$path": "src/client/ReplicatedStorage/RunConfig.luau"
       }
     },
 
@@ -16,10 +19,8 @@
     },
 
     "StarterPlayer": {
-      "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
-        }
+      "StarterCharacterScripts": {
+        "$path": "src/client/StarterPlayer/StarterCharacterScripts"
       }
     }
   }
