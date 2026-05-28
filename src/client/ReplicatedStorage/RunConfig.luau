@@ -5,7 +5,7 @@ local RunConfig = {}
 -- \\ SETTINGS \\
 
 RunConfig.WalkSpeed = game.StarterPlayer.CharacterWalkSpeed
-RunConfig.RunSpeed = 20 -- Speed while runninh
+RunConfig.RunSpeed = 40 -- Speed while runninh
 RunConfig.SprintSpeed = 60 -- Speed while sprinting
 
 RunConfig.WalkFov = workspace.Camera.FieldOfView
@@ -13,11 +13,11 @@ RunConfig.RunFov = 80 -- Camera FieldOfView while running
 RunConfig.SprintFov = 85 -- Camera FieldOfView while sprinting
 
 RunConfig.CanRun = true -- If the player is able to run
-RunConfig.CanSprint = false -- If the player is able to sprint
+RunConfig.CanSprint = true -- If the player is able to sprint
 
 RunConfig.RunKey = Enum.KeyCode.LeftShift -- The key to press to run
 RunConfig.TransitionSpeed = 0.5 -- Time it takes to go from walking to running
-RunConfig.SprintTransitionSpeed = 3 -- Time it takes before you start sprinting
+RunConfig.SprintTransitionSpeed = 1.2 -- Time it takes before you start sprinting
 
 RunConfig.RunAnimationId = "rbxassetid://" -- EXAMPLE: "rbxassetid://1234567890"
 RunConfig.SprintAnimationId = "rbxassetid://" -- EXAMPLE: "rbxassetid://1234567890"
