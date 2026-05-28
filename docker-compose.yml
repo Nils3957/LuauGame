@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  rojo-server:
+    build: .
+    container_name: rojo_dev_server
+    ports:
+      - "34872:34872"
+    volumes:
+      - .:/app
+    restart: unless-stopped

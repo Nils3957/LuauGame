@@ -3,3 +3,5 @@ rojo.exe
 *.hwpx
 *.zip
 *.pdf
+# Docker
+.dockerignore
