@@ -1,30 +1,24 @@
 -- [[
 	제작: Jersito4 (기반) / Gemini CLI (기능 수정)
-	날짜: 2026년 5월 28일
-	
-	설명:
-		이 스크립트는 플레이어가 이단 점프(Double Jump)를 할 수 있게 합니다.
-		첫 번째와 두 번째 점프의 높이를 각각 다르게 설정할 수 있습니다.
-]]
+	날짜: 2026년 5월 28일 (Sync Triggered)
+--]]
 
 local UserInputService = game:GetService("UserInputService")
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
 
--- // 설정 섹션 //
+-- // Jersito4 스타일 설정 섹션 //
 local Settings = {
-	ExtraJumps = 1,
-	FirstJumpMultiplier = 1.0,  -- 첫 번째 점프 높이 배율
-	SecondJumpMultiplier = 1.5, -- 두 번째 점프 높이 배율
-	WhiteList = {},
+	ExtraJumps = 1,      -- 추가로 점프할 수 있는 횟수 (1이면 이단 점프)
+	JumpMultiplier = 5, -- 이단 점프 시 높이 배율 (1.5배)
+	WhiteList = {},      -- 특정 유저만 허용할 경우 ID 입력
 }
 
 -- // 로직 변수 //
 local currentJumpCount = 0
 local canDoubleJump = false
 local baseJumpPower = humanoid.JumpPower
-local baseJumpHeight = humanoid.JumpHeight
 
 -- 화이트리스트 체크 함수
 local function isWhitelisted(userId)
@@ -37,21 +31,12 @@ end
 
 if not isWhitelisted(player.UserId) then return end
 
--- 점프력/높이 변경 함수 (호환성 보장)
-local function applyJumpMultiplier(multiplier)
-	if humanoid.UseJumpPower then
-		humanoid.JumpPower = baseJumpPower * multiplier
-	else
-		humanoid.JumpHeight = baseJumpHeight * multiplier
-	end
-end
-
 -- 상태 감지 및 리셋
 humanoid.StateChanged:Connect(function(oldState, newState)
 	if newState == Enum.HumanoidStateType.Landed then
 		currentJumpCount = 0
 		canDoubleJump = false
-		applyJumpMultiplier(Settings.FirstJumpMultiplier) -- 기본 점프력으로 복구
+		humanoid.JumpPower = baseJumpPower -- 점프력 원상복구
 	elseif newState == Enum.HumanoidStateType.Jumping then
 		currentJumpCount = 1
 		canDoubleJump = true
@@ -67,11 +52,9 @@ UserInputService.JumpRequest:Connect(function()
 	if canDoubleJump and currentJumpCount <= Settings.ExtraJumps then
 		currentJumpCount = currentJumpCount + 1
 		
-		if currentJumpCount == 1 then
-			applyJumpMultiplier(Settings.FirstJumpMultiplier)
-		elseif currentJumpCount == 2 then
-			-- 이단 점프 시 더 높은 점프력 적용
-			applyJumpMultiplier(Settings.SecondJumpMultiplier)
+		if currentJumpCount > 1 then
+			-- 이단 점프 시 설정된 배율만큼 높이 증가
+			humanoid.JumpPower = baseJumpPower * Settings.JumpMultiplier
 			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 		end
 	end
