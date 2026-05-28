@@ -1,12 +1,7 @@
---[[
+-- [[
 	제작: Jersito4 (기반) / Gemini CLI (기능 수정)
-	날짜: 2026년 5월 28일
-	
-	설명:
-		이 스크립트는 플레이어가 이단 점프(Double Jump)를 할 수 있게 합니다.
-		두 번째 점프 시 점프 높이가 1.5배 증가합니다.
-        모든 기기(Device)와 모든 캐릭터에서 정상적으로 작동합니다.
-]]
+	날짜: 2026년 5월 28일 (Sync Triggered)
+--]]
 
 local UserInputService = game:GetService("UserInputService")
 local player = game.Players.LocalPlayer
