@@ -2,7 +2,7 @@
 
 local RunConfig = {}
 
--- \\ SETTINGS \\
+-- \\ SETTINGS (Forced Sync: v2) \\
 
 RunConfig.WalkSpeed = game.StarterPlayer.CharacterWalkSpeed
 RunConfig.RunSpeed = 40 -- Speed while runninh
