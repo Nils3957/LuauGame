@@ -48,15 +48,17 @@ function InventoryUI.CreateMain()
 	-- 검색창
 	local searchBox = Instance.new("TextBox")
 	searchBox.Name = "SearchBox"
+	searchBox.Text = ""
 	searchBox.PlaceholderText = "아이템 검색..."
 	searchBox.Size = UDim2.new(0, 200, 0, 30)
 	searchBox.Position = UDim2.new(1, -220, 0.5, -15)
 	searchBox.BackgroundColor3 = Color3.fromRGB(60, 60, 65)
 	searchBox.TextColor3 = Color3.new(1, 1, 1)
+	searchBox.PlaceholderColor3 = Color3.fromRGB(180, 180, 180)
 	searchBox.Font = Enum.Font.Gotham
 	searchBox.TextSize = 14
 	searchBox.Parent = topBar
-	
+
 	local searchCorner = Instance.new("UICorner")
 	searchCorner.CornerRadius = UDim.new(0, 5)
 	searchCorner.Parent = searchBox
@@ -67,9 +69,12 @@ function InventoryUI.CreateMain()
 	scrollFrame.Size = UDim2.new(1, -40, 1, -80)
 	scrollFrame.Position = UDim2.new(0, 20, 0, 70)
 	scrollFrame.BackgroundTransparency = 1
-	scrollFrame.ScrollBarThickness = 4
-	scrollFrame.ScrollBarImageColor3 = Color3.new(0.5, 0.5, 0.5)
-	scrollFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+	scrollFrame.ScrollBarThickness = 6
+	scrollFrame.ScrollBarImageColor3 = Color3.fromRGB(80, 80, 85)
+	scrollFrame.CanvasSize = UDim2.new(0, 0, 0, 0) -- 초기값
+	scrollFrame.AutomaticCanvasSize = Enum.AutomaticCanvasSize.Y -- 내용물에 따라 자동 크기 조절
+	scrollFrame.ScrollingDirection = Enum.ScrollingDirection.Y
+	scrollFrame.Active = true -- 마우스 휠 입력을 받기 위해 필요
 	scrollFrame.Parent = mainFrame
 
 	local gridLayout = Instance.new("UIGridLayout")

@@ -7,6 +7,9 @@
       "Shared": {
         "$path": "src/shared"
       },
+      "Events": {
+        "$path": "src/shared/Events"
+      },
       "RunConfig": {
         "$path": "src/client/ReplicatedStorage/RunConfig.luau"
       }
