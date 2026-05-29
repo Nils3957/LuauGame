@@ -28,6 +28,7 @@
     },
     "StarterPlayer": {
       "StarterPlayerScripts": {
+        "$path": "src/client/StarterPlayer/StarterPlayerScripts",
         "Inventory": {
           "$path": "src/client/Inventory"
         }

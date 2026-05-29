@@ -1,0 +1,352 @@
+[
+  {
+    "Id": 1,
+    "Name": "Legendary 검",
+    "Amount": 15,
+    "Rarity": "Legendary",
+    "Description": "전설 속의 용사가 사용하던 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 2,
+    "Name": "Common 포션",
+    "Amount": 82,
+    "Rarity": "Common",
+    "Description": "흔하게 구할 수 있는 회복 포션입니다.\n체력을 약간 회복시킵니다."
+  },
+  {
+    "Id": 3,
+    "Name": "Rare 갑옷",
+    "Amount": 3,
+    "Rarity": "Rare",
+    "Description": "단단한 철로 만들어진 희귀한 갑옷입니다.\n방어력을 크게 올려줍니다."
+  },
+  {
+    "Id": 4,
+    "Name": "Epic 재료",
+    "Amount": 47,
+    "Rarity": "Epic",
+    "Description": "마법의 기운이 깃든 영웅적인 재료입니다.\n고급 아이템 제작에 쓰입니다."
+  },
+  {
+    "Id": 5,
+    "Name": "Uncommon 방패",
+    "Amount": 12,
+    "Rarity": "Uncommon",
+    "Description": "나무로 덧댄 쓸만한 방패입니다.\n기본적인 방어가 가능합니다."
+  },
+  {
+    "Id": 6,
+    "Name": "Rare 검",
+    "Amount": 55,
+    "Rarity": "Rare",
+    "Description": "이 아이템은 Rare 등급의 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 7,
+    "Name": "Epic 방패",
+    "Amount": 28,
+    "Rarity": "Epic",
+    "Description": "이 아이템은 Epic 등급의 방패입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 8,
+    "Name": "Common 갑옷",
+    "Amount": 71,
+    "Rarity": "Common",
+    "Description": "이 아이템은 Common 등급의 갑옷입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 9,
+    "Name": "Legendary 포션",
+    "Amount": 5,
+    "Rarity": "Legendary",
+    "Description": "이 아이템은 Legendary 등급의 포션입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 10,
+    "Name": "Uncommon 재료",
+    "Amount": 94,
+    "Rarity": "Uncommon",
+    "Description": "이 아이템은 Uncommon 등급의 재료입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 11,
+    "Name": "Epic 갑옷",
+    "Amount": 33,
+    "Rarity": "Epic",
+    "Description": "이 아이템은 Epic 등급의 갑옷입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 12,
+    "Name": "Common 검",
+    "Amount": 19,
+    "Rarity": "Common",
+    "Description": "이 아이템은 Common 등급의 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 13,
+    "Name": "Rare 재료",
+    "Amount": 66,
+    "Rarity": "Rare",
+    "Description": "이 아이템은 Rare 등급의 재료입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 14,
+    "Name": "Legendary 방패",
+    "Amount": 2,
+    "Rarity": "Legendary",
+    "Description": "이 아이템은 Legendary 등급의 방패입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 15,
+    "Name": "Uncommon 포션",
+    "Amount": 88,
+    "Rarity": "Uncommon",
+    "Description": "이 아이템은 Uncommon 등급의 포션입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 16,
+    "Name": "Rare 포션",
+    "Amount": 41,
+    "Rarity": "Rare",
+    "Description": "이 아이템은 Rare 등급의 포션입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 17,
+    "Name": "Common 방패",
+    "Amount": 77,
+    "Rarity": "Common",
+    "Description": "이 아이템은 Common 등급의 방패입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 18,
+    "Name": "Epic 검",
+    "Amount": 14,
+    "Rarity": "Epic",
+    "Description": "이 아이템은 Epic 등급의 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 19,
+    "Name": "Legendary 재료",
+    "Amount": 9,
+    "Rarity": "Legendary",
+    "Description": "이 아이템은 Legendary 등급의 재료입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 20,
+    "Name": "Uncommon 갑옷",
+    "Amount": 52,
+    "Rarity": "Uncommon",
+    "Description": "이 아이템은 Uncommon 등급의 갑옷입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 21,
+    "Name": "Common 재료",
+    "Amount": 63,
+    "Rarity": "Common",
+    "Description": "이 아이템은 Common 등급의 재료입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 22,
+    "Name": "Epic 포션",
+    "Amount": 25,
+    "Rarity": "Epic",
+    "Description": "이 아이템은 Epic 등급의 포션입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 23,
+    "Name": "Rare 갑옷",
+    "Amount": 11,
+    "Rarity": "Rare",
+    "Description": "이 아이템은 Rare 등급의 갑옷입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 24,
+    "Name": "Uncommon 검",
+    "Amount": 84,
+    "Rarity": "Uncommon",
+    "Description": "이 아이템은 Uncommon 등급의 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 25,
+    "Name": "Legendary 갑옷",
+    "Amount": 1,
+    "Rarity": "Legendary",
+    "Description": "이 아이템은 Legendary 등급의 갑옷입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 26,
+    "Name": "Rare 방패",
+    "Amount": 37,
+    "Rarity": "Rare",
+    "Description": "이 아이템은 Rare 등급의 방패입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 27,
+    "Name": "Epic 재료",
+    "Amount": 59,
+    "Rarity": "Epic",
+    "Description": "이 아이템은 Epic 등급의 재료입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 28,
+    "Name": "Common 포션",
+    "Amount": 91,
+    "Rarity": "Common",
+    "Description": "이 아이템은 Common 등급의 포션입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 29,
+    "Name": "Uncommon 방패",
+    "Amount": 18,
+    "Rarity": "Uncommon",
+    "Description": "이 아이템은 Uncommon 등급의 방패입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 30,
+    "Name": "Legendary 검",
+    "Amount": 6,
+    "Rarity": "Legendary",
+    "Description": "이 아이템은 Legendary 등급의 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 31,
+    "Name": "Common 검",
+    "Amount": 44,
+    "Rarity": "Common",
+    "Description": "이 아이템은 Common 등급의 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 32,
+    "Name": "Epic 갑옷",
+    "Amount": 21,
+    "Rarity": "Epic",
+    "Description": "이 아이템은 Epic 등급의 갑옷입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 33,
+    "Name": "Rare 포션",
+    "Amount": 75,
+    "Rarity": "Rare",
+    "Description": "이 아이템은 Rare 등급의 포션입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 34,
+    "Name": "Uncommon 재료",
+    "Amount": 32,
+    "Rarity": "Uncommon",
+    "Description": "이 아이템은 Uncommon 등급의 재료입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 35,
+    "Name": "Legendary 방패",
+    "Amount": 4,
+    "Rarity": "Legendary",
+    "Description": "이 아이템은 Legendary 등급의 방패입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 36,
+    "Name": "Epic 방패",
+    "Amount": 68,
+    "Rarity": "Epic",
+    "Description": "이 아이템은 Epic 등급의 방패입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 37,
+    "Name": "Common 갑옷",
+    "Amount": 15,
+    "Rarity": "Common",
+    "Description": "이 아이템은 Common 등급의 갑옷입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 38,
+    "Name": "Rare 검",
+    "Amount": 89,
+    "Rarity": "Rare",
+    "Description": "이 아이템은 Rare 등급의 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 39,
+    "Name": "Uncommon 포션",
+    "Amount": 27,
+    "Rarity": "Uncommon",
+    "Description": "이 아이템은 Uncommon 등급의 포션입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 40,
+    "Name": "Legendary 재료",
+    "Amount": 7,
+    "Rarity": "Legendary",
+    "Description": "이 아이템은 Legendary 등급의 재료입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 41,
+    "Name": "Rare 재료",
+    "Amount": 51,
+    "Rarity": "Rare",
+    "Description": "이 아이템은 Rare 등급의 재료입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 42,
+    "Name": "Epic 포션",
+    "Amount": 13,
+    "Rarity": "Epic",
+    "Description": "이 아이템은 Epic 등급의 포션입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 43,
+    "Name": "Common 방패",
+    "Amount": 96,
+    "Rarity": "Common",
+    "Description": "이 아이템은 Common 등급의 방패입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 44,
+    "Name": "Uncommon 검",
+    "Amount": 39,
+    "Rarity": "Uncommon",
+    "Description": "이 아이템은 Uncommon 등급의 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 45,
+    "Name": "Legendary 갑옷",
+    "Amount": 3,
+    "Rarity": "Legendary",
+    "Description": "이 아이템은 Legendary 등급의 갑옷입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 46,
+    "Name": "Epic 검",
+    "Amount": 72,
+    "Rarity": "Epic",
+    "Description": "이 아이템은 Epic 등급의 검입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 47,
+    "Name": "Rare 방패",
+    "Amount": 24,
+    "Rarity": "Rare",
+    "Description": "이 아이템은 Rare 등급의 방패입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 48,
+    "Name": "Common 재료",
+    "Amount": 81,
+    "Rarity": "Common",
+    "Description": "이 아이템은 Common 등급의 재료입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 49,
+    "Name": "Uncommon 갑옷",
+    "Amount": 16,
+    "Rarity": "Uncommon",
+    "Description": "이 아이템은 Uncommon 등급의 갑옷입니다.\n가치는 매우 높습니다."
+  },
+  {
+    "Id": 50,
+    "Name": "Legendary 포션",
+    "Amount": 8,
+    "Rarity": "Legendary",
+    "Description": "이 아이템은 Legendary 등급의 포션입니다.\n가치는 매우 높습니다."
+  }
+]
