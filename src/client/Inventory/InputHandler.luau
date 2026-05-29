@@ -1,17 +1,38 @@
 local UserInputService = game:GetService("UserInputService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
-local player = Players.LocalPlayer
 
-local inventoryGui = nil -- UI 에셋이 Rojo로 동기화된 후 참조될 변수
+local InventoryUI = require(script.Parent.UI.InventoryUI)
+local ItemDatabase = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Inventory"):WaitForChild("ItemDatabase"))
+
+local player = Players.LocalPlayer
+local inventoryGui = InventoryUI.CreateMain()
+local mainFrame = inventoryGui.MainFrame
+local scrollFrame = mainFrame.ItemGrid
+local searchBox = mainFrame.TopBar.SearchBox
+
+-- 초기 슬롯 생성 (20칸)
+local slots = {}
+for i = 1, 20 do
+	slots[i] = InventoryUI.CreateSlot(scrollFrame, i)
+end
 
 local function ToggleInventory()
-	if not inventoryGui then
-		-- 임시로 화면 중앙에 텍스트 표시 (UI가 아직 없는 경우를 대비)
-		print("Inventory Toggled! (UI Asset pending sync)")
-		return
-	end
 	inventoryGui.Enabled = not inventoryGui.Enabled
+	UserInputService.MouseIconEnabled = inventoryGui.Enabled
+	
+	if inventoryGui.Enabled then
+		-- 열릴 때 데이터 동기화 요청 가능
+		print("Inventory Opened")
+	end
 end
+
+-- 검색 기능
+searchBox:GetPropertyChangedSignal("Text"):Connect(function()
+	local filter = searchBox.Text:lower()
+	-- 실제 아이템 데이터와 연동하여 슬롯 필터링 로직 추가 예정
+	print("Filtering for: " .. filter)
+end)
 
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
 	if gameProcessed then return end
@@ -20,4 +41,4 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
 	end
 end)
 
-print("Inventory Key Handler Loaded. Press 'I' to toggle.")
+print("Advanced Programmatic Inventory Ready. Press 'I' to toggle.")

@@ -18,7 +18,17 @@
       }
     },
 
+    "StarterGui": {
+      "InventoryUI": {
+        "$path": "Inventory_system.rbxm"
+      }
+    },
     "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Inventory": {
+          "$path": "src/client/Inventory"
+        }
+      },
       "StarterCharacterScripts": {
         "$path": "src/client/StarterPlayer/StarterCharacterScripts"
       }
